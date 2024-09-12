@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0f7fa; /* მყარი ფონი მთელი გვერდისთვის */
+}
+
+.container {
+    text-align: center;
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-image: url('https://via.placeholder.com/150x50'); /* ღილაკის ფონად ფოტო */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.content-div {
+    width: 300px;
+    padding: 20px;
+    background-image: url('https://via.placeholder.com/300x200'); /* დივის ფონად ფოტო */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content-div h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.content-div p {
+    margin: 10px 0;
+}
+
+.content-div .link {
+    color: #ffeb3b; /* ლინკის ფერი */
+    text-decoration: none;
+    font-weight: bold;
+}
+.repeat-example {
+    background-image: url('https://via.placeholder.com/100x100');
+    background-repeat: repeat; /* ფონური გამოსახულების განმეორება ორივე მიმართულებით */
+}
+
+.no-repeat-example {
+    background-image: url('https://via.placeholder.com/100x100');
+    background-repeat: no-repeat; /* ფონური გამოსახულება გამოჩნდება მხოლოდ ერთხელ */
+}
+
+.repeat-x-example {
+    background-image: url('https://via.placeholder.com/100x100');
+    background-repeat: repeat-x; /* ფონური გამოსახულების განმეორება მხოლოდ ჰორიზონტალურად */
+}
+
+.repeat-y-example {
+    background-image: url('https://via.placeholder.com/100x100');
+    background-repeat: repeat-y; /* ფონური გამოსახულების განმეორება მხოლოდ ვერტიკალურად */
+}

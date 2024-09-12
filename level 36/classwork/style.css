@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.image-button {
+    width: 200px;
+    height: 100px;
+    border: none;
+    background-image: url('https://via.placeholder.com/200x100'); /* ჩასვით თქვენი ფოტოს URL */
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.image-div {
+    width: 300px;
+    padding: 20px;
+    background-image: url('https://via.placeholder.com/300x200'); /* ჩასვით თქვენი ფოტოს URL */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.image-div h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.image-div p {
+    margin: 10px 0;
+}
+
+.image-div .link {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
