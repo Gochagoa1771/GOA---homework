@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სია თვისებები</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>სია თვისებები</h1>
+
+    <h2>თქვენი სია</h2>
+    <ul id="myList">
+        <li>პირველი ელემენტი</li>
+        <li>მეორე ელემენტი</li>
+        <li>მესამე ელემენტი</li>
+    </ul>
+
+    <button onclick="addElement()">ელემენტის დამატება</button>
+    <button onclick="removeElement()">ელემენტის ამოღება</button>
+    <button onclick="showLength()">სიგრძის გაწვდვა</button>
+    <p id="info"></p>
+
+    <script>
+        function addElement() {
+            const list = document.getElementById('myList');
+            const newElement = document.createElement('li');
+            newElement.textContent = 'ახალი ელემენტი';
+            list.appendChild(newElement);
+        }
+
+        function removeElement() {
+            const list = document.getElementById('myList');
+            if (list.children.length > 0) {
+                list.removeChild(list.lastChild);
+            }
+        }
+
+        function showLength() {
+            const list = document.getElementById('myList');
+            const length = list.children.length;
+            document.getElementById('info').textContent = 'სიის სიგრძე: ' + length;
+        }
+    </script>
+</body>
+</html>
