@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .hover-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease, background-color 0.3s, box-shadow 0.3s, left 0.5s; /* ანიმაციები */
+    position: relative; 
+  }
+  
+  .hover-button:hover {
+    background-color: #45a049; 
+    transform: scale(2); 
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    left: 200px; 
+  }

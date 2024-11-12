@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .text-container {
+    text-align: center;
+  }
+  
+  .fade-text {
+    opacity: 0; 
+    font-size: 24px;
+    color: #333;
+    transition: opacity 1s ease-in-out; 
+  }
+  
+  
+  .text-container:hover .fade-text {
+    opacity: 1; 
+  }
+  div{
+    background-color: black;
+    border-radius: 10vh;
+  }
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 15px;
+    width: 80%;
+  }
+  image-container img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5; 
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+    border-radius: 10px; 
+  }
