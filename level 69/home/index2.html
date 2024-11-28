@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid მაგალითი 3</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 15px;
+        }
+        .item {
+            background-color: lightgreen;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="item">manqana 1</div>
+    <div class="item"> manqana2</div>
+    <div class="item"> manqana3</div>
+    <div class="item"> manqana4</div>
+    <div class="item"> manqana5</div>
+    <div class="item"> manqana6</div>
+</div>
+
+</body>
+</html>
